@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.0'
+use_frameworks!
+
+target 'CI-HelloWorld' do
+  pod 'XCGLogger', '~> 3.0'
+end
+
+target 'CI-HelloWorldTests' do
+
+end
+
+target 'CI-HelloWorldUITests' do
+
+end
