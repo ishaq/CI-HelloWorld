@@ -14,34 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19D92C3BFC7DD6EEE6176941B8DA624B"
-               BuildableName = "XCGLogger.framework"
-               BlueprintName = "XCGLogger"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "847D7C0B5A3180A36D4841D061372C8D"
-               BuildableName = "Pods_CI_HelloWorld.framework"
-               BlueprintName = "Pods-CI-HelloWorld"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "57C482AA1BBBD43F001DC19B"
                BuildableName = "CI-HelloWorld.app"
                BlueprintName = "CI-HelloWorld"
