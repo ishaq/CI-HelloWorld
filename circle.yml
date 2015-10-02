@@ -1,2 +1,6 @@
 general:
-    build_dir: CI-HelloWorld
+  build_dir: CI-HelloWorld
+
+machine:
+  xcode:
+    version: "7.0"
