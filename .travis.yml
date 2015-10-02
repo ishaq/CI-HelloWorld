@@ -1,12 +1,5 @@
+language: objective-c
 osx_image: xcode7
 podfile: CI-HelloWorld/Podfile
 xcode_workspace: CI-HelloWorld/CI-HelloWorld.xcworkspace
 xcode_scheme: CI-HelloWorld
-language: objective-c
-
-
-before_install:
-    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-    - cd CI-HelloWorld && pod install
-script:
-  - xctool -workspace CI-HelloWorld.xcworkspace -scheme CI-HelloWorld build test
