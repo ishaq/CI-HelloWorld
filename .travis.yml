@@ -6,4 +6,4 @@ xcode_scheme: CI-HelloWorld
 
 script:
   - cd CI-HelloWorld
-  - xctool -workspace CI-HelloWorld.xcworkspace -scheme CI-HelloWorld clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  - xctool -workspace CI-HelloWorld.xcworkspace -scheme CI-HelloWorld -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
