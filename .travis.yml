@@ -1,10 +1,10 @@
 language: objective-c
 osx_image: xcode7
-podfile: ./CI-HelloWorld/
+podfile: ./CI-HelloWorld/Podfile
 xcode_workspace: ./CI-HelloWorld/CI-HelloWorld.xcworkspace
 xcode_scheme: CI-HelloWorld
 
 install:
     - pwd
-    - ls ./CI-HelloWorld/
+    - cd CI-HelloWorld
     - pod install
