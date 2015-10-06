@@ -5,6 +5,25 @@ dependencies:
 general:
   build_dir: CI-HelloWorld
 
+# checkout:
+#   post:
+#     - pod install
+
 machine:
   xcode:
     version: "7.0"
+
+test:
+  override:
+    - set -o pipefail &&
+      xcodebuild
+        CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY=
+        PROVISIONING_PROFILE=
+        -sdk iphonesimulator
+        -destination "platform=iOS Simulator,name=iPhone 6,OS=latest"
+        -workspace "CI-HelloWorld.xcworkspace"
+        -scheme "CI-HelloWorld"
+        clean build test
+      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
+      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
