@@ -22,8 +22,7 @@ class CI_HelloWorldTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual("The answer to life, universe, and everything", 42, "The answer to life, universe, and everything should be equal to 42")
     }
     
     func testPerformanceExample() {

@@ -29,8 +29,8 @@ class CI_HelloWorldUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        XCTAssertEqual(app.staticTexts["The answer to life, universe, and everything"].exists, true, "The app should provide answer to life, universe and everything")
     }
     
 }
