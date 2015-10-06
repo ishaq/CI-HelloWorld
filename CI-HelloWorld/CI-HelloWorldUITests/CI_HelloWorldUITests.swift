@@ -29,8 +29,6 @@ class CI_HelloWorldUITests: XCTestCase {
     }
     
     func testExample() {
-        let app = XCUIApplication()
-        XCTAssertEqual(app.staticTexts["The answer to life, universe, and everything"].exists, true, "The app should provide answer to life, universe and everything")
     }
     
 }
