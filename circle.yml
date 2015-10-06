@@ -1,7 +1,3 @@
-dependencies:
-  pre:
-    - brew uninstall xctool && brew install --HEAD xctool
-
 general:
   build_dir: CI-HelloWorld
 
